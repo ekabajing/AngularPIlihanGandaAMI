@@ -1,0 +1,20 @@
+<div class="container py-5 mt-5 d-flex">
+  <div class="col-6">
+    <img src="../../assets/images/1.png" alt="Welcome" width="500">
+  </div>
+  <div class="col-6">
+    <h1 class="display-5 fw-bold">Selamat Datang</h1>
+    <p class="col-8 fs-8">Kuis terdiri dari 10 pertanyaan. Masing-masing pertanyaan 10 Poin</p>
+    <h6>Ketentuan :</h6>
+    <ul>
+        <li>Jawaban benar +10 poin</li>
+        <li>Jawaban salah -10 poin</li>
+        <li>Waktu menjawab 60 detik</li>
+    </ul>
+    <div class="name col-8 my-3">
+        <label for="">Masukkan Nama Anda:</label>
+        <input #name type="tetx" class="form-control">
+    </div>
+    <button class="btn btn-primary" routerLink="/pertanyaan" (click)="mulaiKuis()">Mulai</button>
+  </div>
+</div>

@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pertanyaan {
+    margin: 15px 0;
+}
+
+.options ul {
+    padding-left: 0;
+}
+
+.options li {
+    list-style:none;
+}
+
+.options .card {
+    padding: 10px;
+}
+
+.options .card:hover {
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.btn:disabled {
+    border: none!important;
+    color: #f5f5f5!important;
+}

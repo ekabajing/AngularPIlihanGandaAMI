@@ -1,0 +1,63 @@
+<div class="container mt-5">
+    <div class="card p-3">
+        <div class="d-flex justtify-content-between p-3">
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="head-kuis text-right">
+                <h4>Kuis HTML & CSS</h4>
+                <span>Hi, {{name}}</span>
+            </div>
+        </div>
+        <hr/>
+        <ng-container *ngIf="!isQuizCompleted">
+            <div class="d-flex justtify-content-between py-3">
+                <div class="col-4 text-center skor">
+                    <h5>{{points}} Poin</h5>
+                </div>
+                <div class="col-4 text-center pengingat">
+                    Pertanyaan ke {{currentPertanyaan+1}} dari {{pertanyaanList.length}}
+                </div>
+                <div class="col-4 text-center waktu">
+                    {{counter}} Sec ⏱
+                </div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar progress-bar-striped" role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="pertanyaan">
+                <div class="">
+                    <h4>{{pertanyaanList[currentPertanyaan]?.pertanyaanText}}</h4>
+                </div>
+            </div>
+            <div class="options">
+                <ul *ngFor="let option of pertanyaanList[currentPertanyaan]?.options">
+                    <li (click)="answer(currentPertanyaan+1,option)">
+                        <div appChangeBg [isCorrect]="option.correct" class="card">
+                            {{option.text}}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button [disabled]="currentPertanyaan===0" class="btn" (click)="previousPertanyaan()"><i class="fa text-primary fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="btn" (click)="resetQuiz()"><i class="fa fa-refresh text-primary" aria-hidden="true"></i></button>
+                <button class="btn" (click)="nextPertanyaan()"><i class="fa text-primary fa-chevron-right" aria-hidden="true"></i></button>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="isQuizCompleted">
+            <div class="row d-flex justify-content-between">
+                <img style="width: 40%;" class="img-fluid col-sm-12 mx-auto" src="../../assets/images/2.png" alt="Finish" width="400">
+                <div class="result text-center col-md-6 col-sm-12">
+                    <h5>Anda telah menyelesaikan kuis ini. <br/>Hasil anda:</h5>
+                    <p>Total Pertanyaan : {{pertanyaanList.length}} </p>
+                    <p>Total Jawaban Benar : {{correctAnswer}} </p>
+                    <p>Total Jawaban Salah : {{inCorrectAnswer}} </p>
+                    <p><strong> Skor : {{points}} Poin </strong></p>
+                </div>
+            </div>
+        </ng-container>
+
+    </div>
+</div>

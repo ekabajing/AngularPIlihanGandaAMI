@@ -1,0 +1,182 @@
+{
+    "pertanyaans": [{
+        "pertanyaanText": "HTML Merupakan singkatan dari?",
+        "options": [
+            {
+                "text": "Hyper Text Markup Laguage",
+                "correct": true
+            },
+            {
+                "text": "Hyper Link Markup Leaguage"
+            },
+            {
+                "text": "Hyper Tool Markup Laguage"
+            },
+            {
+                "text": "Hyper Test Markup Laguage"
+            }
+        ]
+    },
+    {
+        "pertanyaanText": "Berikut ini yang menjadi standarisasi Web?",
+        "options": [
+            {
+                "text": "ECMAN (uropean Computer Manufacturers Association)"
+            },
+            {
+                "text": "Google"
+            },
+            {
+                "text": "PSR (PHP Standars Recommendation)"
+            },
+            {
+                "text": "W3C (World Wide Web Consortium)",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "pertanyaanText": "Berikut ini tag untuk membuat heading, kecuali?",
+        "options": [
+            {
+                "text": "<h4>"
+            },
+            {
+                "text": "<h7>.",
+                "correct": true
+            },
+            {
+                "text": "<h5>"
+            },
+            {
+                "text": "<h6>"
+            }
+        ]
+    },
+    {
+        "pertanyaanText": "Untuk membuat baris baru menggunakan tag?",
+        "options": [
+            {
+                "text": "<newline>"
+            },
+            {
+                "text": "<br>",
+                "correct": true
+            },
+            {
+                "text": "<break>"
+            },
+            {
+                "text": "<hr>"
+            }
+        ]
+    },
+    {
+        "pertanyaanText": "Tag untuk membuat garis datar (horizontal)?",
+        "options": [
+            {
+                "text": "<hr>",
+                "correct": true
+            },
+            {
+                "text": "<br>"
+            },
+            {
+                "text": "<newline>"
+            },
+            {
+                "text": "<break>"
+            }
+        ]
+    },
+    {
+        "pertanyaanText": "Sintak yang benar untuk menambah warna latar belakang?",
+        "options": [
+            {
+                "text": "<body =’background:green’>"
+            },
+            {
+                "text": "<body color=’green’>"
+            },
+            {
+                "text": "<background>green</background>"
+            },
+            {
+                "text": "<body style=’background-color:green’>",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "pertanyaanText": "Tag untuk membuat huruf tebal adalah?",
+        "options": [
+            {
+                "text": "<bold>"
+            },
+            {
+                "text": "<b>",
+                "correct": true
+            },
+            {
+                "text": "<i>"
+            },
+            {
+                "text": " <important>"
+            }
+      ]
+    },
+    {
+        "pertanyaanText": "Karakter yang digunakan untuk tag akhir?",
+        "options": [
+            {
+                "text": "/",
+                "correct": true
+            },
+            {
+                "text": "<>"
+            },
+            {
+                "text": "*"
+            },
+            {
+                "text": ";"
+            }
+      ]
+    },
+    {
+        "pertanyaanText": "Untuk membuat tabel menggunakan tag?",
+        "options": [
+            {
+                "text": "<table>",
+                "correct": true
+            },
+            {
+                "text": " <tables>"
+            },
+            {
+                "text": "<tb>"
+            },
+            {
+                "text": "<tab>"
+            }
+      ]
+    },
+    {
+        "pertanyaanText": "Saat membuat tabel tag <tr> berfungsi untuk?",
+        "options": [
+            {
+                "text": "Membuat baris",
+                "correct": true
+            },
+            {
+                "text": "Membuat kolom"
+            },
+            {
+                "text": "Membuat header tabel"
+            },
+            {
+                "text": "membuat body tabel"
+            }
+        ]
+    }
+]}
